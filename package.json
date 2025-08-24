@@ -1,0 +1,18 @@
+{
+  "name": "url-shortener-app",
+  "version": "1.0.0",
+  "description": "URL Shortener App with MERN Stack",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../Frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd Frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["url-shortener", "mern", "react", "node", "mongodb"],
+  "author": "LC Corporate",
+  "license": "MIT"
+}
