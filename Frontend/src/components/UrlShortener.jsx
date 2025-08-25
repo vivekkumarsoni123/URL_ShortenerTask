@@ -16,7 +16,7 @@ const UrlShortener = () => {
     setSuccess(false);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/shorten', {
+      const response = await axios.post('https://url-shortenertask.onrender.com/api/shorten', {
         originalUrl
       });
 

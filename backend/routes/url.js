@@ -24,7 +24,7 @@ router.post("/shorten", async (req, res) => {
     if (url) {
       return res.json({
         originalUrl: url.originalUrl,
-        shortUrl: `http://localhost:5000/${url.shortCode}`,
+        shortUrl: `https://url-shortenertask.onrender.com/${url.shortCode}`,
         shortCode: url.shortCode
       });
     }

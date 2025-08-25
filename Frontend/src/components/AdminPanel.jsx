@@ -14,7 +14,7 @@ const AdminPanel = () => {
   const fetchUrls = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/urls');
+      const response = await axios.get('https://url-shortenertask.onrender.com/api/urls');
       setUrls(response.data);
     } catch (err) {
       setError('Failed to fetch URLs');
