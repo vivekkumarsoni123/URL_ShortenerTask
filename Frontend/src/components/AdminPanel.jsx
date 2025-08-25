@@ -108,8 +108,8 @@ const AdminPanel = () => {
                   </a>
                 </div>
                 <div className="table-cell short-url">
-                  <a href={`http://localhost:5000/${url.shortCode}`} target="_blank" rel="noopener noreferrer">
-                    {`http://localhost:5000/${url.shortCode}`}
+                  <a href={`https://url-shortenertask.onrender.com/${url.shortCode}`} target="_blank" rel="noopener noreferrer">
+                    {`https://url-shortenertask.onrender.com/${url.shortCode}`}
                   </a>
                 </div>
                 <div className="table-cell clicks">
@@ -120,7 +120,7 @@ const AdminPanel = () => {
                 </div>
                 <div className="table-cell actions">
                   <button 
-                    onClick={() => copyToClipboard(`http://localhost:5000/${url.shortCode}`)}
+                    onClick={() => copyToClipboard(`https://url-shortenertask.onrender.com/${url.shortCode}`)}
                     className="copy-btn"
                   >
                     Copy
